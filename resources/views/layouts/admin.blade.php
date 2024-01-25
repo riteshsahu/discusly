@@ -53,7 +53,7 @@
         <a href="{{ url('/') }}">
             <img src="{{ Storage::url('images/logo.svg') }}" alt="Logo" class="logo-img">
         </a>
-        <a class="navbar-brand logo-text mr-1" href="{{ url('/') }}">ODF</a>
+        <a class="navbar-brand logo-text logo-text-admin mr-1" href="{{ url('/') }}">{{ config('app.name', 'Discusly') }}</a>
 
         <button class="btn btn-link btn-sm text-white order-1 order-sm-0 ml-5" id="sidebarToggle" href="#">
             <i class="fas fa-bars"></i>

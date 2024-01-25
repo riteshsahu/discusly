@@ -4,7 +4,7 @@
             <img src="{{ Storage::url('images/logo.svg') }}" alt="Logo" class="logo-img">
         </a>
         <a class="navbar-brand logo-text" href="{{ url('/') }}">
-            {{ config('app.name', 'ODF') }}
+            {{ config('app.name', 'Discusly') }}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>

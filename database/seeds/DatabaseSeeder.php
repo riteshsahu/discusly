@@ -92,7 +92,7 @@ class DatabaseSeeder extends Seeder
         ThreadSubscription::truncate();
         Activity::truncate();
         Favorite::truncate();
-        Redis::del("odf_database_trending_threads");
+        Redis::del("discusly_database_trending_threads");
         Artisan::call('cache:clear');
 
         factory(Thread::class, 50)->states('from_existing_channels_and_users')->create()->each(function ($thread) {

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Online Discussion Forum</title>
+        <title>{{ config('app.name', 'Discusly') }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -69,7 +69,7 @@
                 font-size: 18px;
                 padding: 0 65px 0 65px;
                 font-weight: 600;
-                background: #0069FF;
+                background: #0cafef;
                 color: #FFFFFF;
                 text-align: center;
                 cursor: pointer;
@@ -79,19 +79,19 @@
             }
 
             .btn-intro:hover {
-                background: #0040ff;
+                background: #0098d3;
             }
 
             .logo-img {
                 height: 2.4rem;
-                margin-right: 1rem;
+                /* margin-right: 1rem; */
             }
 
             .logo-text {
                 text-decoration: none;
                 font-weight: 600;
-                font-size: 1rem;
-                color: rgb(111, 35, 115) !important;
+                font-size: 1.2rem;
+                text-transform: none !important;
             }
         </style>
     </head>
@@ -101,7 +101,7 @@
                 <a href="{{ url('/') }}">
                     <img src="{{ Storage::url('images/logo.svg') }}" alt="Logo" class="logo-img">
                 </a>
-                <a href="{{ url('/') }}" class="logo-text">ODF</a>
+                <a href="{{ url('/') }}" class="logo-text">{{ config('app.name', 'Discusly') }}</a>
             </div>
 
             @if (Route::has('login'))

@@ -24,6 +24,8 @@ class AdminController extends Controller
             ->groupBy('day', 'month')
             ->get();
 
+        $replies_data = [];
+
         foreach ($rows as $row) {
             $replies_data[$row->month . ' ' . $row->day] = $row->replies_count;
         }

@@ -119,7 +119,7 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'predis'),
-            'prefix' => Str::slug(env('APP_NAME', 'odf'), '_').'_database_',
+            'prefix' => Str::slug(env('APP_NAME', 'discusly'), '_').'_database_',
         ],
 
         'default' => [

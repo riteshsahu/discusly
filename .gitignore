@@ -15,3 +15,4 @@ yarn-error.log
 /storage/purify
 /.idea
 .editorconfig
+.DS_Store

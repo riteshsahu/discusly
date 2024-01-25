@@ -10,7 +10,7 @@
                 <div class="card-body">
                     <ais-search-box placeholder="Find a thread..." :autofocus="true" />
                 </div>
-                <img src="https://odf-bucket.s3.ap-south-1.amazonaws.com/images/algolia.svg" alt="algolia logo" class="w-75 mx-auto pb-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Algolia_logo_full_blue.svg" alt="algolia logo" class="w-75 mx-auto pb-3">
             </div>
 
             <div class="card">
